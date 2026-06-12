@@ -1,16 +1,23 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma base simples para o desenvolvimento de uma aplicação React com Vite.
 
-Currently, two official plugins are available:
+A estrutura atual inclui:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Navegação com `react-router-dom`
+- Páginas Início, Cadastro e Listagem
+- Componente `Navbar` reutilizável
 
-## React Compiler
+## Como rodar o projeto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Abra o terminal na pasta do projeto.
+2. Execute `npm install`.
+3. Execute `npm run dev`.
+4. Acesse `http://127.0.0.1:5173/` no navegador.
 
-## Expanding the ESLint configuration
+## Observações
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+O projeto está preparado para começar a atividade universitária com uma base limpa de React e roteamento. Ainda não há integração com backend, banco de dados, contexto ou formulário final.
+
+
+Link do Kanban: https://github.com/users/Fabricio2407/projects/2/views/1

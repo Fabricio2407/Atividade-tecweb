@@ -8,6 +8,7 @@
 
 .app-header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
@@ -18,23 +19,33 @@
 
 .app-header h1 {
   margin: 0;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 .app-header p {
-  margin: 0.2rem 0 0;
+  margin: 0.25rem 0 0;
   color: #4b5563;
   font-size: 0.95rem;
 }
 
-nav a {
+.navbar {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.nav-link {
   color: #2563eb;
   text-decoration: none;
   font-weight: 600;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
 }
 
-nav a:hover {
-  text-decoration: underline;
+.nav-link:hover,
+.nav-link.active {
+  background: #eff6ff;
+  color: #1d4ed8;
 }
 
 .app-main {
@@ -42,8 +53,8 @@ nav a:hover {
   padding: 2rem;
 }
 
-.home-page {
-  max-width: 720px;
+.page-content {
+  max-width: 760px;
   margin: 0 auto;
   background: #ffffff;
   padding: 2rem;
@@ -51,11 +62,11 @@ nav a:hover {
   border-radius: 0.75rem;
 }
 
-.home-page h2 {
+.page-content h2 {
   margin-top: 0;
 }
 
-.home-page p {
+.page-content p {
   margin: 1rem 0 0;
   line-height: 1.75;
   color: #374151;
