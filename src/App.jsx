@@ -1,5 +1,8 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
-import Home from './pages/Home'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Inicio from './pages/Inicio'
+import Cadastro from './pages/Cadastro'
+import Listagem from './pages/Listagem'
 import './App.css'
 
 function App() {
@@ -8,16 +11,16 @@ function App() {
       <div className="app-shell">
         <header className="app-header">
           <div>
-            <h1>Projeto React Vite</h1>
-            <p>Estrutura inicial com react-router-dom configurado.</p>
+            <h1>Atividade React</h1>
+            <p>Aplicação simples com navegação entre as páginas Início, Cadastro e Listagem.</p>
           </div>
-          <nav>
-            <Link to="/">Home</Link>
-          </nav>
+          <Navbar />
         </header>
         <main className="app-main">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Inicio />} />
+            <Route path="/cadastro" element={<Cadastro />} />
+            <Route path="/listagem" element={<Listagem />} />
           </Routes>
         </main>
       </div>
