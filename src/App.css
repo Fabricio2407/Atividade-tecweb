@@ -123,13 +123,19 @@ button[type='submit']:hover {
   font-weight: 600;
 }
 
-.lista-alunos {
+.lista-alunos,
+.lista-external {
   display: grid;
   gap: 1rem;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
-.aluno-card {
+.listagem-secao {
+  margin-top: 2rem;
+}
+
+.aluno-card,
+.usuario-externo-card {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -139,13 +145,15 @@ button[type='submit']:hover {
   background: #f9fafb;
 }
 
-.aluno-info {
+.aluno-info,
+.usuario-externo-card div {
   display: grid;
   gap: 0.45rem;
   color: #111827;
 }
 
-.aluno-info strong {
+.aluno-info strong,
+.usuario-externo-card strong {
   font-size: 1.05rem;
 }
 
